@@ -23,22 +23,24 @@
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
-        <div class="users-list">
-            <h1>Users list</h1>
+        <div class="error-content">
+            <!-- <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Field can't be empty!</p> -->
+        </div>
+        <template class="user-template">
             <div class="user">
-                <img src="https://reqres.in/img/faces/7-image.jpg" alt="" class="user-avatar">
-                <div>
-                    <p class="user-name">Michael Lawson</p>
-                    <p class="user-email">michael.lawson@reqres.in</p>
-                </div>
+                <img src="" alt="avatar" class="user-avatar">
+                <p class="user-name"></p>
+                <p class="user-email"></p>
             </div>
-            <div class="user">
-                <img src="https://reqres.in/img/faces/8-image.jpg" alt="" class="user-avatar">
-                <div>
-                    <p class="user-name">Lindsay Ferguson</p>
-                    <p class="user-email">lindsay.ferguson@reqres.in</p>
-                </div>
-            </div>
+        </template>
+        
+        <div class="user-box"></div>
+        
+        <div class="find-user-content">
+            <h1>Find User</h1>
+            <p class="total-users">Choose form 1 to 12:</p>
+            <input type="search" name="find-user-field" id="find-user-field" class="find-user-field" placeholder="Enter User ID">
+            <input type="button" value="find-user-btn" id="find-user-btn" class="find-user-btn">
         </div>
     </main>
     
