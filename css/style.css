@@ -29,6 +29,7 @@ body {
     top: 0;
     padding: 14px;
     box-shadow: 0 0 10px rgba(32, 32, 32, 0.85);
+    z-index: 10000;
 }
 
 .navbar-nav {
