@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ReqRes</title>
+</head>
+<body>
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="blob">
+        <path fill="#FF0066" d="M41.2,-74.4C51.8,-65.2,57.9,-51,66.5,-37.8C75,-24.6,86,-12.3,83.8,-1.3C81.6,9.8,66.2,19.5,57.4,32.4C48.6,45.2,46.5,61,38.1,69C29.6,76.9,14.8,77,2.4,72.8C-10,68.7,-20,60.4,-33.9,55.5C-47.7,50.7,-65.4,49.3,-74.4,40.6C-83.4,31.9,-83.8,16,-83.5,0.1C-83.3,-15.7,-82.5,-31.5,-76.7,-45.6C-70.8,-59.7,-59.9,-72.2,-46.2,-79.8C-32.6,-87.4,-16.3,-90,-0.5,-89.1C15.3,-88.2,30.5,-83.7,41.2,-74.4Z" transform="translate(100 100)" />
+    </svg>
+    <main>
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">LOGO</a>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li class="nav-item"><a href="users-list.html">Users</a></li>
+                <li class="nav-item"><a href="user.html">Find User</a></li>
+                <li class="nav-item login-btn"><a href="login.html">Login</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <div class="error-content">
+            <!-- <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Field can't be empty!</p> -->
+        </div>
+        <template class="user-template">
+            <div class="user">
+                <img src="" alt="avatar" class="user-avatar">
+                <p class="user-name"></p>
+                <p class="user-email"></p>
+            </div>
+        </template>
+        
+        <div class="user-box"></div>
+        
+        <div class="find-user-content">
+            <h1>Find User</h1>
+            <p class="total-users">Choose form 1 to 12:</p>
+            <input type="search" name="find-user-field" id="find-user-field" class="find-user-field" placeholder="Enter User ID">
+            <input type="button" value="find-user-btn" id="find-user-btn" class="find-user-btn">
+        </div>
+    </main>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

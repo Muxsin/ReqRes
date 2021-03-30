@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Comfortaa', cursive !important;
+    background-color: #333;
+    color: white;
+}
+
+.blob {
+    z-index: -1000;
+    position: fixed;
+    width: 600px;
+    left: -100px;
+    top: -150px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 14px;
+    box-shadow: 0 0 10px rgba(32, 32, 32, 0.85);
+}
+
+.navbar-nav {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: 800;
+    color: white;
+}
+
+.nav-item {
+    background-color: #444444;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.nav-item a {
+    color: white;
+    padding: 14px 0;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.nav-item:hover {
+    background-color: #666666;
+    color: black;
+}
+
+a.icon {
+    font-size: 24px;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 18px;
+}
+
+.login-btn {
+    background-color: #ff0066be;
+}
+
+main {
+    position: relative;
+}
+
+.error-content {
+    position: fixed;
+    background-color: rgba(32, 32, 32, 0.65);
+    width: 90%;
+    right: 5%;
+    left: 5%;
+    padding: 0 14px;
+    border-radius: 999px;
+    text-align: center;
+}
+
+.user {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.user p {
+    margin: 5px;
+}
+
+.user-avatar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(32, 32, 32, 0.65);
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: 800;
+    color: white;
+    font-size: 24px;
+}
+
+.user-email {
+    font-weight: 600;
+    color: #efefef;
+    font-size: 18px;
+}
+
+.find-user-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 15%;
+    margin-top: 64px;
+}
+
+.find-user-content h1 {
+    margin: 5px 0;
+}
+
+.find-user-field, .find-user-btn {
+    font-size: 20px;
+    height: 44px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(32, 32, 32, 0.65);
+}
+
+.find-user-field {
+    border-top-left-radius: 5px;
+    background-color: #efefef;
+    padding-left: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.find-user-field::placeholder {
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+
+/* .find-user-field::-webkit-search-cancel-button {
+    position: relative;
+    right: 5px;
+    
+} */
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: .3;
+    pointer-events: all;
+}
+
+.find-user-btn {
+    font-family: 'Comfortaa', cursive;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #222;
+    box-shadow: 0 0 6px rgba(32, 32, 32, 0.65);
+    color: white;
+    cursor: pointer;
+}
+
+.total-users {
+    width: 100%;
+    font-size: 14px;
+    color: #efefef;
+}
