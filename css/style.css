@@ -149,6 +149,7 @@ main {
 
 .find-user-field {
     border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: #efefef;
     padding-left: 10px;
     font-family: 'Comfortaa', cursive;

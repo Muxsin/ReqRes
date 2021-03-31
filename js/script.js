@@ -40,7 +40,7 @@ function addUser(element) {
     userElement.appendChild(element);
 }
 
-findUserBtn.onclick = () => {
+function getUser() {
     let findUserFieldValue = (findUserField.value).trim();
     if(findUserFieldValue !== "") {
         if(/^[0-9]/.test(findUserFieldValue)) {
@@ -66,6 +66,10 @@ findUserBtn.onclick = () => {
     } else {
         addError("Field can\'t be empty!");
     }
+}
+
+findUserBtn.onclick = () => {
+    getUser();
 }
 
 
