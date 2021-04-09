@@ -72,5 +72,3 @@ findUserBtn.onclick = () => {
     getUser();
 }
 
-
-

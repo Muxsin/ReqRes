@@ -23,26 +23,30 @@
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
+
+        <h1 class="users-list-title">Users list</h1>
+        <div class="pagination-bar">
+            <select name="pagination" id="pagination">
+                <option>3</option>
+                <option selected>6</option>
+                <option>9</option>
+                <option>12</option>
+            </select>
+            <button id="pagination-btn">Set</button>
+        </div>
+
         <div class="users-list">
-            <h1>Users list</h1>
-            <div class="user">
-                <img src="https://reqres.in/img/faces/7-image.jpg" alt="" class="user-avatar">
-                <div>
-                    <p class="user-name">Michael Lawson</p>
-                    <p class="user-email">michael.lawson@reqres.in</p>
+            <template class="user-template">
+                <div class="user">
+                    <img src="" alt="avatar" class="user-avatar">
+                    <p class="user-name"></p>
+                    <p class="user-email"></p>
                 </div>
-            </div>
-            <div class="user">
-                <img src="https://reqres.in/img/faces/8-image.jpg" alt="" class="user-avatar">
-                <div>
-                    <p class="user-name">Lindsay Ferguson</p>
-                    <p class="user-email">lindsay.ferguson@reqres.in</p>
-                </div>
-            </div>
+            </template>
         </div>
     </main>
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/users.js"></script>
 </body>
 </html>
